@@ -9,7 +9,7 @@ app.use(cors());
 
 // const dotenv = require('dotenv')
 // dotenv.config();
-const dbURI = 'mongodb+srv://Ambika:Ambika1234@cluster0.m6vw5f9.mongodb.net/node?retryWrites=true&w=majority';
+const dbURI = 'mongodb+srv://Ambika:@cluster0.m6vw5f9.mongodb.net/node?retryWrites=true&w=majority';
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((result) => { app.listen('4500') })
