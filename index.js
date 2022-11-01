@@ -5,12 +5,11 @@ const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-app.use(cors());
+app.use(cors())
 
 // const dotenv = require('dotenv')
 // dotenv.config();
 const dbURI = 'mongodb+srv://Ambika:Ambika1234@cluster0.m6vw5f9.mongodb.net/node?retryWrites=true&w=majority';
-const port = 4500 || process.env.PORT;
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((result) => { app.listen(port) })
