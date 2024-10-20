@@ -10,7 +10,7 @@ app.use(cors())
 // const dotenv = require('dotenv')
 // dotenv.config();
 
-const dbURI = 'mongodb+srv://Ambika:Ambika1234@cluster0.m6vw5f9.mongodb.net/node?retryWrites=true&w=majority';
+const dbURI='dfd' ;
 const port = process.env.PORT;
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
